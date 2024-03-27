@@ -15,5 +15,12 @@
    - Click *save*
 9. It will take up to 10 minutes for your site to go live
     - On your repository code page navigate to the Actions tab for more information when your waiting for updates to process.
+10. In order for your Index page to load first, you need to rename or delete the README.md file
+    - Rename the file: 
+        - open the <> code tab your repository 
+        - open the README.md file
+        - click the pencil icon in the top right corner to edit
+        - parallel with the *commit changes* button, modify the name of the file (leave the file extension as .md)
+        - click ***Commit Changes***, confirm the changes in the pop up.
 
 Once it's setup your website will be viewable on https://***YourUserName***.github.io/***RepoName***/
