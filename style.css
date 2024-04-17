@@ -21,12 +21,14 @@ p {
 footer {
     position: fixed; bottom: 0em;
 }
+li {
+    margin-top: 6px;
+}
 
 /* to call a class put a . before its name */
 .newacronym{
     color: aquamarine;
 }
-
 .box1 {
     border: thick double hotpink;
     padding: 1em;
