@@ -31,3 +31,16 @@ footer {
     border: thick double hotpink;
     padding: 1em;
 }
+  .inner {
+    background: black;
+  }
+ .hidden {
+    height: auto;
+    width: 300px;
+    display: none
+  }
+  .inner:hover img {
+    display: block;
+    width: 568px;
+    height: 168px;
+  }
