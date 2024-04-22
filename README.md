@@ -1,4 +1,8 @@
-# Setting up github Pages
+# Getting set up for web building with GitHub Pages & VS Code
+
+[Find more information about setting up VS Code here.](https://carnormalien.github.io/2024S2_CurtinMediaArt/setuppage.html)
+
+## Setting up GitHub Pages
 
 1. Create a github account
 2. Navigate to [the github template](https://github.com/carNormAlien/2024S2_CurtinMediaArt) 
