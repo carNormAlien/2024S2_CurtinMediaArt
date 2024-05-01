@@ -16,12 +16,29 @@ p { /* poem generator and text swap */
     font-family: 'Courier New', Courier, monospace;
     font-size: small;
 }
+footer {
+    position: fixed; bottom: 0em;
+}
+.body-wrapper{
+    margin: 20px;
+    border-style: double;
+    border-color: cornflowerblue;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    background-image: url(assets/welcomebutterf.gif);
+}
 .box1 { /* image position */
+    margin: 1em;
     border: thick double hotpink;
     padding: 1em;
+    width: inherit;
+    height: auto;
 }
 .pics { /* image position */
     position: relative;
+    width: inherit;
+    height: 1000px;
 }
 .swapbutton { /* poem generator and text swap */
     border-style: none;
@@ -48,9 +65,6 @@ p { /* poem generator and text swap */
     font-size: small;
     display: block; /* center the button */
     margin: auto; /* center the button */
-}
-footer {
-    position: fixed; bottom: 0em;
 }
 #poem {
     padding-top: 10%;

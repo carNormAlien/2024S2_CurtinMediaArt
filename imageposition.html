@@ -8,21 +8,22 @@ The index.html file is typically the landing page for a website on github pages 
     <title>Layered image positioning example</title> <!-- The title of your page will display in the tab. Fun fact the icon displayed in the tab is called a favicon. -->
 </head>
 <body> <!-- The body contains the majority of the content on the page, the bulk of your text, images, links, elements will all be located in here.-->
-    <h1>Welcome</h1>
-    <div class="box1"> <!-- a div is a container which you can use to group together content. Divs are used to create layouts, separate information, contain different styles etc, it can be obvious, or invisible. This is a block type element.-->
+    <div class="body-wrapper"> <!--a div is a container which you can use to group together content. Divs are used to create layouts, separate information, contain different styles etc, it can be obvious, or invisible. This is a block type element.-->
+        <div class="box1">
+            <h1>Welcome</h1>
+        </div>
         <div class="box1"> <!-- the box1 class includes a pink border-->
-            <div class="pics, box1"> <!-- the pics class is telling the images to be displayed relative to the div position, by combining this div attribute with each picture having the position:absolute attribute, the images can be layered over each other in precice locatiions -->
+            <div class="pics"> <!-- the pics class is telling the images to be displayed relative to the div position, by combining this div attribute with each picture having the position:absolute attribute, the images can be layered over each other in precice locatiions -->
+                <img src="assets/welcomebutterf.gif" width="700" height="500" style="position:absolute; top:10px;  left:10px; opacity: 0.6;">
                 <img src="assets/welcomebutterf.gif" width="700" height="500" style="position:absolute; top:100em;  left:150em; opacity: 0.8;"> <!-- em is a unit of measurement relative to the container size -->
                 <img src="assets/welcomebutterf.gif" width="700" height="500" style="position:absolute; top:300px;  left:50px; opacity: 0.5;"> <!-- px is pixels which is functionally static [it's relative only to the pixel density of the display device]-->
-                <img src="assets/welcomebutterf.gif" width="700" height="500" style="position:absolute; top:110px;  left:70px; opacity: 0.6;">
-            </div>
-            <div class="pics">
+                <img src="assets/welcomebutterf.gif" width="700" height="500" style="position:absolute; bottom:110em;  right:500em; opacity: 0.6;"> <!-- instead of defining the position of the image by the top left you can also use bottom and right-->
                 <img src="assets/welcomebutterf.gif" width="180" height="100" style="position:absolute; top:200px;  left:80px; opacity: 0.8;">
                 <img src="assets/welcomebutterf.gif" width="1000" height="100" style="position:absolute; top:250px;  left:100px; opacity: 0.5;">
+                <img src="assets/welcomebutterf.gif" width="100" height="1000" style="position:absolute; top:110px;  left:750px; opacity: 0.6;">
             </div>
         </div>
     </div>
-
 </body>
 <footer> <!-- The footer is a the end of the page, it's totally optional and typically contains a note about the last update, or a dis on your sworn enemy.-->
     <p>Made with love by [your name here] &lt;3 <br>
