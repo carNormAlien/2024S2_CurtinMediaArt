@@ -12,6 +12,10 @@ h1 {
 
 h2 {
     color: blueviolet;
+    text-align: center;
+}
+h3 {
+    color: darkturquoise;
 }
 
 p {
@@ -19,7 +23,9 @@ p {
 }
 
 footer {
-    position: fixed; bottom: 0em;
+    margin-top: 2em;
+    margin-bottom: 0em;
+    position: relative; 
 }
 li {
     margin-top: 6px;
@@ -30,6 +36,7 @@ li {
     color: aquamarine;
 }
 .box1 {
+    margin: 1em;
     border: thick double hotpink;
     padding: 1em;
 }

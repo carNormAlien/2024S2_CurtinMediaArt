@@ -17,6 +17,7 @@ p { /* poem generator and text swap */
     font-size: small;
 }
 .box1 { /* image position */
+    margin: 1em;
     border: thick double hotpink;
     padding: 1em;
 }
@@ -50,7 +51,10 @@ p { /* poem generator and text swap */
     margin: auto; /* center the button */
 }
 footer {
-    position: fixed; bottom: 0em;
+    position: fixed; bottom: 0em; right: 2%;
+    margin-top: 2em;
+    margin-bottom: 0em;
+    text-align: right;
 }
 #poem {
     padding-top: 10%;
