@@ -13,7 +13,7 @@ The index.html file is typically the landing page for a website on github pages 
     </h1>
     <p>
         imagine the <span id="rep1one" >clouds</span><button id="rep2" class="swapbutton" onclick="replace2()">dripping.</button><br> <!--the "br" element means break, as in line break, AKA end this line of text here.-->
-        dig a hole in your garden to <br>
+        dig a <span id="rep1one1">hole</span> in your garden to <br>
         put them in.<br>
         <button id="rep3" class="swapbutton" onclick="replace3()">1963 Spring</button>
     </p>
@@ -23,16 +23,26 @@ The index.html file is typically the landing page for a website on github pages 
         arr1[0]="cloud";
         arr1[1]="computer";
         arr1[2]="code";
-        let i = 1; // i begins at 1 so that the first button click changes from 0 to 1.
-
+        //second array for chain reactions
+        const arr4 = [];
+        arr4[0]="clumps";
+        arr4[1]="void";
+        arr4[2]="spaghettio";
+        // i begins at 1 so that the first button click changes from 0 to 1.
+        let i = 1; 
+        
         function replace1() {
             if (i <= 2) { // i counts from 0 to 2 (<= means equal to or less than)
                 document.getElementById("rep1").innerHTML = arr1[i];
 
-                //insert delay
+                //insert chain reaction 1
                     setTimeout(()=> {
                         document.getElementById("rep1one").innerHTML = arr1[i];
                     } ,1000); //1000 represents 1000 milliseconds
+                //insert chain reaction 2
+                    setTimeout(()=> {
+                        document.getElementById("rep1one1").innerHTML = arr4[i]; //the second chain reaction draws from a different array called arr4
+                    } ,2000); //2000 represents 1000 milliseconds
                 
                 //to get rid of delay and have the words change at the same time, comment out the above lines and 'uncomment' the below line
                 //document.getElementById("rep1one").innerHTML = arr1[i];
