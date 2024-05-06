@@ -7,7 +7,7 @@ The index.html file is typically the landing page for a website on github pages 
     <link href="style/examplestyle.css" rel="stylesheet"> <!-- this links your HTML file to your style sheet, which gives instructions on how the page is displayed including; font, background, layout, favicon -->
     <title>Second text replacement example </title> <!-- The title of your page will display in the tab. Fun fact the icon displayed in the tab is called a favicon. -->
 </head>
-<body> <!-- The body contains the majority of the content on the page, the bulk of your text, images, links, elements will all be located in here.-->
+<body> <!-- this example toggles through an array of words on a button click, including changing multiple elements with 1 button and implimenting a delay to the second character change-->
     <h1>
         <button id="rep1" class="swapbuttonheading" onclick="replace1()">cloud</button>piece
     </h1>
@@ -26,18 +26,23 @@ The index.html file is typically the landing page for a website on github pages 
         let i = 1; // i begins at 1 so that the first button click changes from 0 to 1.
 
         function replace1() {
-            if (i < 3) { // i counts from 0 to 3
+            if (i <= 2) { // i counts from 0 to 2 (<= means equal to or less than)
                 document.getElementById("rep1").innerHTML = arr1[i];
-                document.getElementById("rep1one").innerHTML = arr1[i];
+
+                //insert delay
+                    setTimeout(()=> {
+                        document.getElementById("rep1one").innerHTML = arr1[i];
+                    } ,1000); //1000 represents 1000 milliseconds
+                
+                //to get rid of delay and have the words change at the same time, comment out the above lines and 'uncomment' the below line
+                //document.getElementById("rep1one").innerHTML = arr1[i];
                 //console.log(i, arr1[i]);
                 i++;
-
                 if (i === 3) { //if i counts higher than 2, turn i back into 0
                     i = 0;
-                    }
                 }
+            }
         }
-
     // Change button 2 - effecting dripping
     const arr2 = [];
         arr2[0]="dripping";
